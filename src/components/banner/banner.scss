@@ -1,0 +1,104 @@
+@import '../../style/variables.scss';
+
+.banner {
+    background-color: $main-bgr-color;
+    color: $text-color-light;
+    padding: 0 0 52px;
+
+    @media (min-width: $desktop) {
+        padding: 0 0 100px;
+    }
+
+    &__content {
+        margin: 0 -12px;
+
+        &-item {
+            margin: 0 12px;
+        }
+
+        @media (min-width: $tablet) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+    &__text {
+        &-title {
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 28px;
+            margin-bottom: 16px;
+
+            @media (min-width: $tablet) {
+                font-size: 28px;
+                line-height: 40px;
+                margin-bottom: 32px;
+            }
+
+            @media (min-width: $desktop) {
+                font-size: 35px;
+                line-height: 48px;
+            }
+        }
+
+        &-description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+
+            @media (min-width: $desktop) {
+                font-weight: 500;
+                font-size: 23px;
+                line-height: 32px;
+            }
+        }
+
+        margin-bottom: 16px;
+    }
+
+    .mark {
+        background-color: $highlight-color;
+    }
+
+    &__image {
+        position: relative;
+        max-width: 344px;
+        margin: 0 auto;
+
+        @media (min-width: $tablet) {
+            max-width: 580px;
+        }
+
+        &-part {
+            background: $bgr-light;
+            border-radius: 8px;
+            color: $text-color-dark;
+            position: absolute;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            right: 8px;
+            bottom: 8px;
+
+            &__link {
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 16px;
+                margin-right: 4px;
+                cursor: pointer;
+            }
+        }
+
+        &-img {
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+
+            @media (min-width: $tablet) {
+                border-radius: 16px;
+            }
+        }
+    }
+
+}

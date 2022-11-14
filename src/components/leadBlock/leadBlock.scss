@@ -1,0 +1,95 @@
+@import '../../style/variables.scss';
+
+.leadBlock {
+    &__content {
+        background-color: $main-bgr-color;
+        color: $text-color-light;
+        padding: 24px 24px 48px;
+        border-radius: 24px;
+
+        @media (min-width: $small-tablet) {
+            margin: 0 40px;
+        }
+
+        @media (min-width: $tablet) {
+            max-width: 1170px;
+            margin: 0 auto;
+            background-color: initial;
+            padding: 0;
+            border-radius: 16px;
+        }
+    }
+
+    &__wrapper {
+
+        @media (min-width: $tablet) {
+            background-color: $main-bgr-color;
+            background-image: url(../../img/bgr-form.svg);
+            background-position: top;
+            background-repeat: no-repeat;
+
+            color: $text-color-light;
+            border-radius: 24px;
+
+            max-width: 1170px;
+            margin: 0 auto;
+
+            padding: 64px 24px 94px;
+        }
+    }
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 36px;
+
+        @media (min-width: $tablet) {
+            text-align: center;
+        }
+    }
+
+
+    &__container {
+        background: $bgr-light;
+        border-radius: 16px;
+        color: $text-color-dark;
+        margin-top: 16px;
+        padding: 24px 16px;
+
+        @media (min-width:$tablet) {
+            max-width: 978px;
+            margin: 32px auto 0;
+            padding: 48px 16px;
+        }
+    }
+
+
+    &__form {
+        max-width: 320px;
+        margin: 0 auto;
+
+        &-title {
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 32px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        &-caption {
+            margin-bottom: 16px;
+        }
+
+        &-input{
+            @media (min-width: $desktop) {
+                margin-bottom: 8px;
+            }
+        }
+
+        &-btn {
+            border-radius: 4px;
+            font-weight: 600;
+        }
+    }
+}

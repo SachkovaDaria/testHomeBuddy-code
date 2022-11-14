@@ -1,0 +1,17 @@
+@import '../../style/variables.scss';
+
+.logo {
+    font-weight: 700;
+    font-size: 24.1743px;
+    line-height: 29px;
+
+    @media (min-width: $desktop) {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    &__dot {
+        color: $active-color;
+    }
+
+}

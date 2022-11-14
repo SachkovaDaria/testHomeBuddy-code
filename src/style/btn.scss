@@ -1,0 +1,39 @@
+@import './variables';
+
+.btn {
+    border: none;
+    color: $text-color-light;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $active-color;
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 16px;
+    cursor: pointer;
+
+    &--form {
+        @media (min-width: $tablet) {
+            width: auto;
+            padding: 16px 24px;
+            margin: 16px auto 0;
+        }
+        @media (min-width: $desktop) {
+            margin: 24px auto 0;
+        }
+
+    }
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: $btn-color-hovAndFoc;
+}
+
+.btn:active {
+    background-color: $btn-color-active;
+}
+
+.btn:disabled {
+    background-color: $btn-color-disabled;
+}

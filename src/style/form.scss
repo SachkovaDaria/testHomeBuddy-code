@@ -1,0 +1,88 @@
+.input-text {
+    padding: 20px 16px;
+    width: 100%;
+    background: #F5F6FE;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    margin-bottom: 8px;
+    color: #222222;
+
+    &::placeholder {
+        color: #222222;
+    }
+
+    &:hover {
+        color: #2F54EB;
+        border: 1px solid #2F54EB;
+        outline: none;
+    }
+
+    &:focus-visible {
+        border: 1px solid #2F54EB;
+        outline: none;
+        color: #222222;
+        caret-color: #2F54EB;
+    }
+
+    &:invalid {
+        border: 1px solid #BB0000;
+    }
+
+    &:disabled {
+        color: #646464;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 17px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.caption {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #646464;
+}
+
+.label-radio {
+    position: relative;
+    color: $text-color-dark;
+    font-size: 14px;
+    line-height: 20px;
+    border: 2px solid #F5F6FE;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &:hover {
+        border: 2px solid $active-color;
+    }
+}
+
+.real-radio {
+    display: none;
+
+    &:checked+.label-radio {
+        border: 2px solid $active-color;
+    }
+}
+
+
+body .modal {
+    overflow: hidden;
+}

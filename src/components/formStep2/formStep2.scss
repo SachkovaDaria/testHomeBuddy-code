@@ -1,0 +1,24 @@
+@import '../../style/variables.scss';
+
+.formStep2 {
+
+    &__lastChoice {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #646464;
+        margin-bottom: 16px;
+        margin-top: -8px;
+
+        @media (min-width: $desktop) {
+            margin-top: -20px;
+            margin-bottom: 24px;
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+    }
+}

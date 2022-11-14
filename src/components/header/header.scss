@@ -1,0 +1,49 @@
+@import '../../style/variables.scss';
+
+.header {
+    background-color: $main-bgr-color;
+    color: $text-color-light;
+    padding: 8px 0 28px;
+
+    @media (min-width: $desktop) {
+        padding: 16px 0 58px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-logo {
+        &__text {
+            &--small {
+                font-weight: 500;
+                font-size: 9px;
+                line-height: 11px;
+
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+
+                opacity: 0.8;
+
+                @media (min-width: $desktop) {
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 0.15em;
+                }
+            }
+        }
+    }
+
+    &-link__btn {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+
+        @media (min-width: $desktop) {
+            line-height: 20px;
+        }
+    }
+
+}

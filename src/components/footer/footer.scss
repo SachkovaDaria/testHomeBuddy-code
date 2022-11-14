@@ -1,0 +1,81 @@
+@import '../../style/variables.scss';
+
+.footer {
+    background-color: $main-bgr-color;
+    color: $text-color-light;
+
+    margin-top: 44px;
+    padding: 24px 0 44px;
+
+    @media (min-width: $tablet) {
+        padding: 24px 0 61px;
+    }
+
+    &__links {
+        max-width: 170px;
+        margin-top: 24px;
+
+        @media (min-width: $tablet) {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+
+    &__item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 16px;
+        cursor: pointer;
+
+        @media (min-width: $tablet) {
+            padding: 0 16px;
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        width: 100%;
+        position: relative;
+
+        @media (min-width: $tablet) {
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: -3px;
+                width: 0;
+                height: 2px;
+                background-color: $bgr-light;
+                transition: width 0.3s;
+            }
+
+            &:hover:after {
+                content: "";
+                width: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                height: 2px;
+                background-color: $active-color;
+                transition: width 0.5s;
+            }
+        }
+    }
+
+    .logo {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+
+        @media (min-width: $tablet) {
+            text-align: center;
+        }
+    }
+}
